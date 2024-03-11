@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "project-name"
+name = "fairytale-bot"
 version = "0.0.1"
 # Template Version: 0.2.3 # added version attribute
 # Add scheduled job example
@@ -8,9 +8,10 @@ authors = ["Petr Lavrov <calmmage@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.8"
+python = ">=3.10,<4.0"
 # for stability, use frozen-app-name branch
-calmlib = { git = "https://github.com/calmmage/calmlib.git", branch = "main" }
+#calmlib = { git = "https://github.com/calmmage/calmlib.git", branch = "main" }
+bot-lib = { git = "https://github.com/calmmage/bot-lib.git", branch = "main" }
 #calmmage = { git = "https://github.com/calmmage/calmmage.git", branch = "main" }
 pytest = "*"
 # logging
