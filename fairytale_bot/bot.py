@@ -1,14 +1,15 @@
 from aiogram import Dispatcher
+from dotenv import load_dotenv
+from fairytale_bot.lib import MyPlugin, MyApp, MyHandler
+
 from bot_lib import (
     BotConfig,
     setup_dispatcher,
 )
 from bot_lib.demo import create_bot, run_bot
-from dotenv import load_dotenv
+from bot_lib.plugins import GptPlugin
 
-from lib import MyPlugin, MyApp, MyHandler
-
-plugins = [MyPlugin]
+plugins = [MyPlugin, GptPlugin]
 app = MyApp(plugins=plugins)
 bot_config = BotConfig(app=app)
 

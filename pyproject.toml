@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fairytale-bot"
-version = "0.0.1"
+version = "0.0.2" # first working version
 # Template Version: 0.2.3 # added version attribute
 # Add scheduled job example
 description = ""
