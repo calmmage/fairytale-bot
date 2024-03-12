@@ -1,4 +1,4 @@
-from fairytale_bot.lib import MyApp
+from fairytale_bot.lib import MainApp
 
 
 def test_extract_story_parts():
@@ -15,7 +15,7 @@ def test_extract_story_parts():
     expected_output = ["- part 1", "- part 2", "- part 3"]
 
     # Act
-    output = MyApp._extract_story_parts(story_structure)
+    output = MainApp._extract_story_parts(story_structure)
 
     # Assert
     assert output == expected_output, f"Expected {expected_output}, but got {output}"

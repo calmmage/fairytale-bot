@@ -17,7 +17,7 @@ COPY . /app
 # Install poetry and dependencies
 RUN pip install poetry
 RUN poetry config virtualenvs.create false
-RUN poetry install --no-dev
+RUN poetry install --only main
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
